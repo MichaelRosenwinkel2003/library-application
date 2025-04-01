@@ -1,0 +1,118 @@
+
+
+.carousel-item {
+    position: relative; /* Allows absolute positioning inside */
+}
+
+.carousel-control-prev, 
+  .carousel-control-next {
+	filter: invert(100%); /* Inverts white to black */
+  }
+  
+ 
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    object-fit: cover; /* Ensures proper scaling */
+}  
+  
+
+.carousel-item:hover .hidden-text {
+    opacity: 1; /* Show text when hovering */
+}
+
+.car-container {
+	margin-top: 3.5rem; 
+}
+
+
+
+/*TESTING */
+/* Wraps the carousel and ensures proper centering */
+/* Centers the carousel inside the container */
+/* Ensure the carousel container allows proper positioning */
+
+
+
+
+#car-text {
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: -2rem;
+}
+	/* Center text under the image */
+.hidden-text {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Cover almost all the image */
+    height: 100%; /* Adjust this for desired coverage */
+    background: rgba(128, 128, 128, 0.8); /* Grey with some transparency */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+	pointer-events: none; /* Prevents it from triggering mouse events */
+}
+
+.col-4 {
+	position:relative; 
+}
+/*navbar stuff */
+.nav {
+	list-style-type:none;
+	margin:0;
+	padding:0; 
+	overflow: hidden;
+	background-color: #333; 
+	
+	display: flex; 
+
+}
+
+.nav-item {
+	display: inline; 
+	float: left; 
+	/*border-right:1px solid #bbb;*/ 
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/*
+li:last-child {
+  border-right: none;
+}
+*/
+
+#nav-acc{
+	margin-left: auto; 
+	border-right:none;
+}
+
+
+li .active {
+	background-color: #04AA6D;
+}
+
+
+body {
+    background-color: #2672ca; /* Solid blue background */
+    color: white; /* Ensures text is readable */
+}
